@@ -14,40 +14,11 @@
 	<title>Microsoft Patents Ones and Zeroes</title>
 	<!-- use unicode ("UTF-8") -->
 	<meta charset="UTF-8">
+	<!-- links to another file (a stylesheet) named style.css and applies it to the html -->
+	<link rel="stylesheet" href="style.css">
 
 	<!-- this style tag is where we will add our styles that affect the page -->
 	<style>
-		/* selector --> what are we styling */
-		/* property/rule --> this is what the style is */
-
-		h1 {
-			color: rgb(255, 0, 0);
-			font-size: 100px;
-			font-family: Arial, Helvetica, sans-serif;
-		}
-
-		p {
-			color: green;
-			font-family: Verdana, Geneva, Tahoma, sans-serif;
-			line-height: 1.5em;
-		}
-
-		/* everything that starts with a "." is selecting a class */
-
-		.video-game-text {
-			color: rgb(0, 255, 0);
-			background-color: black;
-		}
-
-		.attribution {
-			color: black;
-			opacity: 0.7;
-			text-align: center;
-		}
-
-		.publication {
-			text-decoration: overline;
-		}
 	</style>
 
 </head>
@@ -55,55 +26,67 @@
 <body>
 	<!-- BODY IS THE MAIN BODY OF CONTENT THAT USERS WILL SEE -->
 
-	<!-- you only want a single h1 on your page -> this is your page title -->
-	<h1>Microsoft Patents Ones and Zeroes</h1>
+	<!-- this div is a wrapper to help add additional styling to the page -->
+	<div class="wrapper">
 
-	<img src="images/newsthumb-bill-gates.jpg" alt="Bill Gates">
+		<!-- you only want a single h1 on your page -> this is your page title -->
+		<h1>Microsoft Patents Ones and Zeroes</h1>
 
-	<!-- an h2 is a subheading -> you can have subheadings of subheadins like h3, h4, h5, and h6 -->
-	<h2>What Did Bill Gates Do This Time?</h2>
+		<div class="image-container">
 
-	<!-- <p> is a paragraph -->
-	<p><strong>REDMOND, WA:</strong> In what CEO Bill Gates called an unfortunate but necessary step to protect our
-		intellectual property from theft and exploitation by competitors, the
-		<a href="https://www.microsoft.com" target="_blank">Microsoft Corporation</a>
-		<!-- absolute link to an address -->
-		patented the numbers
-		one and zero Monday.
-	</p>
+			<img src="images/newsthumb-bill-gates.jpg" alt="Bill Gates">
 
-	<a href="#list-of-microsoft-patents">List of MS Patents</a>
-	<!-- link to a specific other area on the page with a matching id -->
-
-	<!-- <strong> will bold text -->
-
-	<p>
-		With the patent, Microsoft’s rivals are prohibited from manufacturing or selling products containing zeroes
-		and
-		ones
-		unless a royalty fee of 10 cents per digit used is paid to the software giant.
-	</p>
-
-	<p>Some other patents that Microsoft owns:</p>
+		</div>
 
 
-	<ul id="list-of-microsoft-patents"> <!-- unordered list -->
-		<li>Windows</li> <!-- list item -->
-		<li>Microsoft Office</li>
-		<li class="video-game-text">Xbox</li>
-	</ul>
+		<!-- an h2 is a subheading -> you can have subheadings of subheadins like h3, h4, h5, and h6 -->
+		<h2>What Did Bill Gates Do This Time?</h2>
 
-	<p>
-		<span class="publication">Wall Street Journal</span> reacts to MS Patent News. <a
-			href="wall-street.html"><em>Read more...</em></a>
-	</p>
-	<!-- anchor <a> tag has an `href` attribute -> basically where do we go when we click the link? -->
-	<!-- <em> will italicize text -->
-	<!-- relative link to another page/file on our domain -->
+		<!-- <p> is a paragraph -->
+		<p><strong>REDMOND, WA:</strong> In what CEO Bill Gates called an unfortunate but necessary step to protect our
+			intellectual property from theft and exploitation by competitors, the
+			<a href="https://www.microsoft.com" target="_blank">Microsoft Corporation</a>
+			<!-- absolute link to an address -->
+			patented the numbers
+			one and zero Monday.
+		</p>
 
-	<p class="attribution">
-		This report was written by <span class="publication">The Onion</span>
-	</p>
+		<a href="#list-of-microsoft-patents">List of MS Patents</a>
+		<!-- link to a specific other area on the page with a matching id -->
+
+		<!-- <strong> will bold text -->
+
+		<p>
+			With the patent, Microsoft’s rivals are prohibited from manufacturing or selling products containing zeroes
+			and
+			ones
+			unless a royalty fee of 10 cents per digit used is paid to the software giant.
+		</p>
+
+		<p>Some other patents that Microsoft owns:</p>
+
+
+		<ul id="list-of-microsoft-patents"> <!-- unordered list -->
+			<li>Windows</li> <!-- list item -->
+			<li>Microsoft Office</li>
+			<li class="video-game-text">Xbox</li>
+		</ul>
+
+		<p>
+			<span class="publication">Wall Street Journal</span> reacts to MS Patent News. <a
+				href="wall-street.html"><em>Read more...</em></a>
+		</p>
+		<!-- anchor <a> tag has an `href` attribute -> basically where do we go when we click the link? -->
+		<!-- <em> will italicize text -->
+		<!-- relative link to another page/file on our domain -->
+
+		<p class="attribution">
+			This report was written by <span class="publication">The Onion</span>
+			<!-- a span allows us to wrap specific text which means we can select and style it -->
+		</p>
+
+	</div> <!-- end wrapper div -->
+
 </body>
 
 </html>
