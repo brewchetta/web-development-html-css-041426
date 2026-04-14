@@ -14,6 +14,42 @@
 	<title>Microsoft Patents Ones and Zeroes</title>
 	<!-- use unicode ("UTF-8") -->
 	<meta charset="UTF-8">
+
+	<!-- this style tag is where we will add our styles that affect the page -->
+	<style>
+		/* selector --> what are we styling */
+		/* property/rule --> this is what the style is */
+
+		h1 {
+			color: rgb(255, 0, 0);
+			font-size: 100px;
+			font-family: Arial, Helvetica, sans-serif;
+		}
+
+		p {
+			color: green;
+			font-family: Verdana, Geneva, Tahoma, sans-serif;
+			line-height: 1.5em;
+		}
+
+		/* everything that starts with a "." is selecting a class */
+
+		.video-game-text {
+			color: rgb(0, 255, 0);
+			background-color: black;
+		}
+
+		.attribution {
+			color: black;
+			opacity: 0.7;
+			text-align: center;
+		}
+
+		.publication {
+			text-decoration: overline;
+		}
+	</style>
+
 </head>
 
 <body>
@@ -53,18 +89,21 @@
 
 	<ul id="list-of-microsoft-patents"> <!-- unordered list -->
 		<li>Windows</li> <!-- list item -->
-		<br>
 		<li>Microsoft Office</li>
-		<br>
-		<li>Xbox</li>
+		<li class="video-game-text">Xbox</li>
 	</ul>
 
-	<p>Wall Street reacts to MS Patent News. <a href="wall-street.html"><em>Read more...</em></a></p>
+	<p>
+		<span class="publication">Wall Street Journal</span> reacts to MS Patent News. <a
+			href="wall-street.html"><em>Read more...</em></a>
+	</p>
 	<!-- anchor <a> tag has an `href` attribute -> basically where do we go when we click the link? -->
 	<!-- <em> will italicize text -->
 	<!-- relative link to another page/file on our domain -->
 
-	<p>This report was written by The Onion</p>
+	<p class="attribution">
+		This report was written by <span class="publication">The Onion</span>
+	</p>
 </body>
 
 </html>
