@@ -1,0 +1,48 @@
+body {
+    font-family: sans-serif;
+}
+
+header {
+    border-bottom: 1px solid #ccc;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: center;
+}
+
+a {
+    color: #13aad7;
+}
+
+main, footer {
+    max-width: 800px;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+h1, h2, h3 {
+    color: #e45c09;
+    font-weight: normal;
+}
+
+h1 {
+    font-size: 28px;
+    line-height: 36px;
+}
+
+h2 {
+    font-size: 23px;
+}
+
+h3 {
+    font-size: 18px;
+}
+
+p {
+    line-height: 30px;
+    margin-bottom: 22px;
+}
+
+img {
+    max-width: 100%;
+}
