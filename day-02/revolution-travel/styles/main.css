@@ -9,8 +9,54 @@ header {
     text-align: center;
 }
 
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+li {
+/*     border: solid red 2px; */
+    display: inline;
+    padding-inline: 10px;
+}
+
+nav a {
+    color: #000;
+    text-transform: uppercase;
+    font-size: 13px;
+}
+
+nav a:visited {
+    color: #333;
+}
+
+nav a:hover {
+    color: aqua;
+}
+
+nav a:active {
+    color: bisque;
+}
+
 a {
     color: #13aad7;
+    text-decoration: none;
+    outline-color: #13aad7;
+    outline-offset: 4px;
+}
+
+a:visited {
+    color: #aaa;
+}
+
+a:hover {
+    color: #e45c09;
+}
+
+a:active {
+    color: #2d4;
 }
 
 main, footer {
