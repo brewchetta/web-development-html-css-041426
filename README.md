@@ -5,4 +5,4 @@
 
 - Day Two: [Link](day-two)
 
-- - Day Two: [Link](day-three)
+- Day Three: [Link](day-three)
