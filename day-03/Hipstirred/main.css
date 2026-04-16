@@ -44,7 +44,7 @@ header a {
     background-color: #520;
 
     /* background image rules */
-    background-image: url("images/hero.jpg");
+    background-image: url("images/hero@2x.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center 75%;

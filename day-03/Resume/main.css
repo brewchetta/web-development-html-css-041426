@@ -11,6 +11,26 @@ header {
 	padding-bottom: 30px;
 	margin-bottom: 30px;
 }
+
+/* implement grid columns */
+
+/* media query --- at 500px and above change styles */
+@media (min-width: 768px) {
+
+  /* use the grid system */
+	main {
+		display: grid;
+		grid-template-columns: 2fr 1fr;
+		grid-gap: 30px;
+	}
+
+	#statement {
+		grid-column: span 2;
+	}
+
+}
+/* end implementing grid columns */
+
 h1, h2, h3 {
 	 font-family: "Unica One", sans-serif;
 	 text-transform: uppercase;
