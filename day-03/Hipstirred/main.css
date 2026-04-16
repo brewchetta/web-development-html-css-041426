@@ -6,25 +6,35 @@ body {
     background-color: rgb(221, 184, 160);
 }
 
-@media (prefers-color-scheme: dark) {
-    body {
-        background-color: #823f0c;
-        color: white;
-    }
-
-    header img {
-        filter: invert(1);
-    }
-
-    body footer {
-        background-color: black;
-    }
-}
-
 #wrapper {
     max-width: 1100px;
     margin-left: auto;
     margin-right: auto;
+}
+
+header {
+    display: flex;
+    /* align things left to right (add as much space as we can */
+    justify-content: space-between;
+    /* align things vertically */
+    align-items: center;
+}
+
+header ul {
+    list-style-type: none;
+    display: inline;
+    padding-left: 0;
+    padding-right: 1em;
+}
+
+header li {
+    display: inline;
+}
+
+header a {
+    color: black;
+    text-transform: uppercase;
+    text-decoration: none;
 }
 
 .hero {
@@ -71,9 +81,36 @@ main {
 footer {
     background-color: #e9d8c8;
     padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#social-media-container img {
+    padding: 10px;
 }
 
 footer p {
     font-size: 15px;
     margin: 0;
+}
+
+/* dark mode stylings */
+@media (prefers-color-scheme: dark) {
+    body {
+        background-color: #823f0c;
+        color: white;
+    }
+
+    header a {
+        color: white;
+    }
+
+    img {
+        filter: invert(1);
+    }
+
+    body footer {
+        background-color: black;
+    }
 }
